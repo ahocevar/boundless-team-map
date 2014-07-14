@@ -1,0 +1,159 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.0470229, 38.8051095]
+      },
+      "properties": {
+        "location": "Alexandria, Virginia",
+        "people": "Akiyo Dunetz\nBlaine Wingfield\nDavid Winslow\nEddie Pickle\nElizabeth Pinner\nEmily Loux\nIlya Rosenfeld\nJoseph Miller\nJoshua Campbell\nJuan Marin\nMatt Richards\nSoumya Sengupta\nSudha Balasubramanian\nTom Ingold"
+      }
+    }
+,    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9865812, 40.7305991]
+      },
+      "properties": {
+        "location": "New York, New York",
+        "people": "Ann Johnson\nAnthony Denaro\nCamille Acey\nDavid Dubovsky\nEva Shon\nEvan Carter\nGlenn Reed\nRolando Penate\nSharon Fischman\nVictor Malaret"
+      }
+    }
+,    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-123.3649269, 48.4283327]
+      },
+      "properties": {
+        "location": "Victoria, British Columbia",
+        "people": "Benjamin Trigona-Harany\nKevin Smith\nPaul Ramsey\nJody Garnett"
+      }
+    }
+,    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.4382918, 47.0708101]
+      },
+      "properties": {
+        "location": "Graz, Austria",
+        "people": "Andreas Hocevar"
+      }
+    }
+,    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [5.15264611584469, 52.11849915]
+      },
+      "properties": {
+        "location": "Utrecht, Netherlands",
+        "people": "Bart van den Eijnden"
+      }
+    }
+,    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-90.1978889, 38.6272733]
+      },
+      "properties": {
+        "location": "St. Louis, Missouri",
+        "people": "Brian Monheiser\nJen Marcus\nRick Berry"
+      }
+    }
+,    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-123.1139383, 49.2608944]
+      },
+      "properties": {
+        "location": "Vancouver, British Columbia",
+        "people": "Dave Gibbon\nMichael Weisman"
+      }
+    }
+,    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-60.6615415, -32.9595004]
+      },
+      "properties": {
+        "location": "Rosario, Argentina",
+        "people": "Gabriel Roldan"
+      }
+    }
+,    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-105.0668085, 40.5508527]
+      },
+      "properties": {
+        "location": "Fort Collins, Colorado",
+        "people": "Gretchen Peterson\nIan Schneider"
+      }
+    }
+,    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-115.3481135, 51.0866897]
+      },
+      "properties": {
+        "location": "Canmore, Alberta",
+        "people": "Justin Deoliveira"
+      }
+    }
+,    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-121.059365948901, 38.67950505]
+      },
+      "properties": {
+        "location": "El Dorado Hills, California",
+        "people": "Ken Bossung"
+      }
+    }
+,    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.6741949, 45.5202471]
+      },
+      "properties": {
+        "location": "Portland, Oregon",
+        "people": "Mike Pumphrey"
+      }
+    }
+,    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [0.3583333, 43.6272222]
+      },
+      "properties": {
+        "location": "Saint-Arailles, France",
+        "people": "Victor Olaya"
+      }
+    }
+,    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-75.163789, 39.952335]
+      },
+      "properties": {
+        "location": "Philadelphia, Pennsylvania",
+        "people": "Mike Maney"
+      }
+    }
+  ]
+}
