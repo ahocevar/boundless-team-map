@@ -63,7 +63,7 @@ window.setInterval(function() {
     window.setTimeout(function() {
       popup.setPosition(location);
       $('#popup').tooltip({
-        title: person + '<br>' + feature.get('location'),
+        title: '<div class="person">' + person + '</div><div class="location">' + feature.get('location') + '</div>',
         html: true,
         placement: 'bottom'
       });
