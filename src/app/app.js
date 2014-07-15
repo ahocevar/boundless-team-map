@@ -8,36 +8,9 @@ var popup = new ol.Overlay({
   element: $('#popup')
 });
 
-var teamSource = new ol.source.GeoJSON({
-  url: 'boundlesslocations.geojson'
-});
-
 var map = new ol.Map({
   overlays: [popup],
   target: 'map',
-  layers: [
-    new ol.layer.Vector({
-      source: new ol.source.TopoJSON({
-        url: 'world-110m.json'
-      }),
-      style: new ol.style.Style({
-        fill: new ol.style.Fill({
-          color: 'rgb(32, 156, 114)'
-        })
-      })
-    }),
-    new ol.layer.Vector({
-      source: teamSource,
-      style: new ol.style.Style({
-        image: new ol.style.Icon({
-          anchor: [0.5, 1],
-          anchorXUnits: 'fraction',
-          anchorYUnits: 'fraction',
-          src: 'src/css/pin_lime.png'
-        })
-      })
-    })
-  ],
   // initial center and zoom of the map's view
   view: new ol.View({
     center: [40.71448, -74.00598].reverse(),
@@ -48,7 +21,35 @@ var map = new ol.Map({
 });
 map.getControls().removeAt(2);
 
+var world = new ol.FeatureOverlay({
+  map: map,
+  style: new ol.style.Style({
+    fill: new ol.style.Fill({
+      color: '#00A78D'
+    })
   })
+});
+
+var team = new ol.FeatureOverlay({
+  map: map,
+  style: new ol.style.Style({
+    image: new ol.style.Icon({
+      anchor: [0.5, 1],
+      anchorXUnits: 'fraction',
+      anchorYUnits: 'fraction',
+      src: 'src/css/pin_lime.png'
+    })
+  })
+});
+
+$.getJSON('world-110m.json', function(data) {
+  var features = new ol.format.TopoJSON().readFeaturesFromObject(data);
+  world.setFeatures(features);
+});
+
+$.getJSON('boundlesslocations.geojson', function(data) {
+  var features = new ol.format.GeoJSON().readFeaturesFromObject(data);
+  team.setFeatures(features);
 });
 
 var animations = [
@@ -56,7 +57,7 @@ var animations = [
 ];
 
 window.setInterval(function() {
-  var features = teamSource.getFeatures();
+  var features = team.getFeatures();
   if (features) {
     var feature = features[Math.round(Math.random() * (features.length - 1))];
     var people = feature.get('people').split('\n');
