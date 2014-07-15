@@ -42,14 +42,18 @@ var team = new ol.FeatureOverlay({
   })
 });
 
-$.getJSON('world-110m.json', function(data) {
-  var features = new ol.format.TopoJSON().readFeaturesFromObject(data);
-  world.setFeatures(features);
+var worldSource = new ol.source.TopoJSON({
+  url: 'world-110m.json'
+});
+worldSource.once('change', function() {
+  world.setFeatures(worldSource.getFeatures());
 });
 
-$.getJSON('boundlesslocations.geojson', function(data) {
-  var features = new ol.format.GeoJSON().readFeaturesFromObject(data);
-  team.setFeatures(features);
+var teamSource = new ol.source.GeoJSON({
+  url: 'boundlesslocations.geojson'
+});
+teamSource.once('change', function() {
+  team.setFeatures(teamSource.getFeatures());
 });
 
 var animations = [
