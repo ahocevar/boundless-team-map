@@ -48,7 +48,7 @@ var map = new ol.Map({
 });
 
 var animations = [
-  'pan', 'elastic', 'bounce', 'spin', 'fly', 'spiral'
+  'pan'
 ];
 
 window.setInterval(function() {
@@ -59,7 +59,7 @@ window.setInterval(function() {
     var person = people[Math.round(Math.random() * (people.length - 1))];
     $('#popup').tooltip('destroy');
     var location = feature.getGeometry().getCoordinates();
-    var animation = animations[Math.round(Math.random() * 5)];
+    var animation = animations[Math.round(Math.random() * (animations.length - 1))];
     window.setTimeout(function() {
       popup.setPosition(location);
       $('#popup').tooltip({
