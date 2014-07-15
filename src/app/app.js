@@ -40,10 +40,14 @@ var map = new ol.Map({
   ],
   // initial center and zoom of the map's view
   view: new ol.View({
-    center: [0, 0],
+    center: [40.71448, -74.00598].reverse(),
     minZoom: 2,
     projection: 'EPSG:4326',
-    zoom: 2
+    zoom: 5
+  })
+});
+map.getControls().removeAt(2);
+
   })
 });
 
